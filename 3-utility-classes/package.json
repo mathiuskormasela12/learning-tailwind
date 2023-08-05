@@ -1,0 +1,21 @@
+{
+  "name": "3-utility-classes",
+  "version": "1.0.0",
+  "description": "Learning Tailwind Utitlity Classes",
+  "main": "index.js",
+  "scripts": {
+    "start": "tailwind -i ./src/tailwind.css -o ./public/css/style.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tailwindcss",
+    "spacing",
+    "color",
+    "typhography-sizing"
+  ],
+  "author": "Mathius",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
