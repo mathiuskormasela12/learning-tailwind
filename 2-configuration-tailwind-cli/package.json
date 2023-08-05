@@ -1,0 +1,22 @@
+{
+  "name": "learning-tailwind",
+  "version": "1.0.0",
+  "description": "Learning Tailwind Css with WPU",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/tailwind.css -o ./public/css/style.css --watch",
+    "tailwind:build": "tailwind -o ./public/css/style.css --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tailwind",
+    "css-framework",
+    "html",
+    "wpu"
+  ],
+  "author": "Mathius",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
