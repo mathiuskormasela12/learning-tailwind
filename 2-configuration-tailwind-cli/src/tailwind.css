@@ -1,3 +1,8 @@
+// This one will called Tailwind Preflight (CSS Reset)
 @tailwind base;
+
+// This one will called all Tailwind Components
 @tailwind components;
+
+// This one will called all Tailwind class utilities
 @tailwind utilities;
