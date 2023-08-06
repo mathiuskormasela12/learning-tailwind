@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Learning Tailwind</title>
+  </head>
+  <body>
+    <div class="w-[600px] my-0 mx-auto mt-8 mb-12">
+      <h1 class="text-4xl font-bold font-mono">Learning Tailwind</h1>
+    </div>
+
+    <!-- 
+      bg-scroll => background-attachment: scroll;
+      bg-fixed => background-attachment: fixed;
+      bg-local => background-attachment: local;
+     -->
+
+    <div class="max-w-xl h-96 mx-auto my-[42px] bg-[#bada55] overflow-y-scroll bg-fixed" style="background-image: url('https://source.unsplash.com/1000x600?tokyo');">
+      <p class="p-5 text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nam accusamus sint, totam tempore molestias cum, deleniti quos minima non asperiores distinctio porro ipsum veritatis dignissimos minus! Iusto cupiditate accusantium molestiae tempora voluptatibus blanditiis assumenda laborum necessitatibus, excepturi nobis debitis facere alias harum? Ipsum laborum id consequatur nihil itaque sit quod praesentium quia? Libero architecto non eligendi blanditiis culpa maxime sed deleniti nihil quod dolorum? Voluptatum asperiores distinctio odio qui obcaecati. Eveniet, recusandae earum nesciunt quas corporis architecto amet doloremque debitis enim optio nisi ut, doloribus quasi, nobis nemo atque obcaecati pariatur? Enim dolore ipsa accusantium velit ipsam, esse harum doloribus blanditiis? Ipsum reiciendis debitis sit esse corrupti libero, iure ex ratione. Dolorem magni quo libero rerum sit ducimus illum nisi nulla architecto eligendi distinctio voluptatum eius quaerat aliquid voluptas blanditiis saepe delectus, perspiciatis ea! Aspernatur assumenda cupiditate minima a molestias, reprehenderit aperiam rerum aliquam, animi excepturi laborum? Placeat molestiae aspernatur veniam velit, maiores iusto delectus quibusdam eveniet. Distinctio omnis aliquam pariatur sapiente, ad eius enim eos recusandae illo mollitia deserunt nisi. Minus est vero veritatis sequi deleniti? Sunt rerum voluptates nulla reprehenderit, dignissimos eius, inventore in dolores nam voluptas, totam debitis possimus consequuntur quae earum voluptatibus ducimus omnis facilis!</p>
+    </div>
+
+    <!-- 
+      bg-cover => background-size: cover;
+      bg-contain => background-size: contain;
+      bg-auto => background-size: auto;
+
+      bg-no-repeat => background-repeat: no-repeat;
+      bg-repeat-x => background-repeat: repeat-x;
+
+      bg-center => background-position: center center;
+      bg-right-center => background-position: right center;
+
+      rounded -> border-radius
+      rounded-full => border-radius: 50%;
+      rounded-t -> border-top-radius
+      rounded-tr -> border-top-right-radius;
+
+      border-5 => border-width
+      border-teal-200 => border-color
+      border-dashed => border-style
+
+      shadow => box-shadow
+      shadow-2xl => box shadow size
+      shadow-slate-300 box shadow color
+
+      opacity-100 => opeacity: 1;
+      opacity-5 => opacity 5%, makin kecil makin transparan
+
+      mix-bland-darken => gabungin warna child dengan background parent
+      bg-bland => gabungin bg warna dan bg img parent
+
+      blur -> untuk bluring element
+      blur-none -> hilangin blur
+
+      brightness -> untuk setting brightniess, normal brightness itu brightness-100
+
+      bg-white/50 m-auto backdrop-blur-lg -> membuet efeect glass atau kaca
+     -->
+    <div class="brightness-20 my-32 max-w-xl mx-auto h-96 bg-blue-300 bg-contain bg-no-repeat shadow-2xl shadow-red-600 opacity-100 rounded-2xl overflow-hidden border-8 bg-blend-multiply hover:blur-xl" style="background-image: url('https://source.unsplash.com/1000x600?japan');">
+      <div class="w-full h-full bg-blue-300 mix-blend-darken"></div>
+    </div>
+
+    <div class="brightness-20 my-32 max-w-xl mx-auto h-96 bg-blue-300 bg-contain rounded-full bg-no-repeat shadow-2xl shadow-red-600 opacity-100 rounded-2xl overflow-hidden border-8 bg-blend-multiply hover:blur-xl flex" style="background-image: url('https://source.unsplash.com/1000x600?japan');">
+      <div class="h-[200px] w-[200px] bg-white/50 m-auto backdrop-blur-lg"></div>
+    </div>
+  </body>
+</html>
