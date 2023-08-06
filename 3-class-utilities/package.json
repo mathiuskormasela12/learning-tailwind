@@ -1,0 +1,22 @@
+{
+  "name": "3-class-utilities-spacing",
+  "version": "1.0.0",
+  "description": "Learning Spacing in Tailwind CSS",
+  "main": "index.js",
+  "scripts": {
+    "tailwind": "tailwind -i ./src/tailwind.css -o ./public/css/style.css --watch",
+    "build": "tailwind -o ./public/css/style.css --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tailwind",
+    "margin",
+    "padding",
+    "css-framework"
+  ],
+  "author": "Mathius",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

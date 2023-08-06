@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Learning Spacing</title>
+  </head>
+
+  <body>
+    <h1>Learning Spacing</h1>
+
+    <section>
+      <!--
+        If we want to implement margin in Tailwind
+        we can use m- prefix. For example, to add margin top, 
+        we can type mt-3.
+
+        Note :
+        m- = margin bottom, margin top, margin left & margin right
+        mt- = margin top
+        mb- = margin bottom
+        ml- = margin left
+        mr- = margin right
+        m-[] = arbitary values, we can define the size manually
+
+        Notes :
+        1 it means 0.25rem
+        2 it means 0.50 rem
+        3 it means 0.75rem
+        px (example m-px) means 1px
+      -->
+      <h2 class="mt-3 mb-3 ml-[10rem]">Margin</h2>
+      <p>Test</p>
+    </section>
+
+    <section class="mt-13">
+      <!--
+        If we want to implement pading in Tailwind
+        we can use p- prefix. For example, to add margin top, 
+        we can type pt-10.
+
+        Note :
+        p- = padding bottom, padding top, padding left & padding right
+        pt- = padding top
+        pb- = padding bottom
+        pl- = padding left
+        pr- = padding right
+        p-[] = arbitary values, we can define the size manually
+
+        Notes :
+        1 it means 0.25rem
+        2 it means 0.50 rem
+        3 it means 0.75rem
+        px (example m-px) means 1px
+      -->
+      <span class="bg-blue-700 text-white pt-10 pb-20 pl-16 pr-20">Padding</span>
+    </section>
+
+    <section class="mt-28 mx-auto w-[600px]">
+      <h2>Sizing & Coloring</h2>
+      <!--
+        To implement width we can use w- prefix
+        and for implementing height we can use h- prefix.
+        Those all are followed by its size. Example
+        w-3, h-3.
+
+        min-h- to implement min heaight.
+        max-h- to implement max-height.
+
+        min-w- to implement min-width
+        max-w- to implement max-width
+
+        Notes :
+        h-screen means to give height 100vh
+        w-screen means to give width 100vw
+
+        To implement text color, we can type text-colorname-size.
+        For example text-yellow-200.
+
+        To impleme backgorund color, we can type bg-colorname-size.
+        For example bg-red-700.
+
+        To implement gradient we can use bg-gradient-to-r from-colorname-size to-colorname-size.
+        For example bg-gradient-to-br from-pink-300 to-red-200
+      -->
+      <div class="w-32 h-32 bg-red-700">
+        <p class="text-yellow-200">Color</p>
+      </div>
+      <div class="mt-3 bg-[skyblue] min-h-0 max-h-36 max-w-2xl">
+        Min & Max Width/Height
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro delectus dolorum aliquid consectetur tempora sequi mollitia voluptatibus natus, expedita, facilis laborum? Repellendus veniam dolore libero. Minima, ullam dicta porro veniam sunt laudantium beatae soluta in iusto dolore alias voluptatum, officiis perferendis eveniet placeat corporis expedita, eligendi praesentium unde pariatur nam corrupti commodi asperiores. Perferendis perspiciatis magnam minima ea, expedita dolorum nostrum eum reprehenderit explicabo dolore praesentium nihil illo sint tempore pariatur ullam deleniti animi aliquam ipsa! Provident repudiandae iusto mollitia molestias sunt architecto eum error quis repellendus, id sit dicta iure nulla impedit, quae optio vero odit quo beatae laudantium, nisi dolorem commodi. Quia aspernatur odit quisquam cupiditate rerum? Neque illum id nemo eveniet rerum illo doloremque ipsum odio! Facere quibusdam porro quo nulla nesciunt. Labore voluptatibus voluptatem iste itaque ducimus doloribus aliquid error cum velit! Non, sequi, eos animi ratione aspernatur inventore pariatur suscipit repellat saepe blanditiis ex incidunt.
+      </div>
+      <div class="my-[300px] w-[300px] h-[300] bg-gradient-to-r from-blue-300 via-green-200 to-red-200">Hei</div>
+    </section>
+
+    <section class="my-32">
+      <!--
+        text-3xl to set font-size
+        font-bold to set font weight
+        tex-center to set text-align
+        underline to set text-decoration 
+        tetx-emerald-600 to set font color
+      -->
+      <h2 class="text-3xl font-bold text-center underline text-emerald-600">Font <span class="font-watashi">Font</span></h2>
+      <h2 class="text-7xl bg-gradient-to-r from-blue-500 to-teal-100 bg-clip-text text-transparent">Hello World</h2>
+    </section>
+  </body>
+</html>
