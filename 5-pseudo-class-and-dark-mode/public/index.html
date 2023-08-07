@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Learning Tailwind CSS</title>
+  </head>
+  <body>
+    <div class="w-[768px] mx-auto">
+      <h1 class="text-4xl font-sans font-semibold mt-8">Pseudo Classes & Dark Mode</h1>
+
+      <!-- 
+        Hover, Active & Focus
+      -->
+      <button 
+        type="submit" 
+        class="mt-8 bg-sky-500 font-sans font-bold text-white px-6 py-3 text-lg rounded-md hover:bg-sky-700 focus:ring focus:ring-sky-800 active:bg-red-500"
+      >
+        Click Me
+      </button>
+
+      <!--  
+        first-letter => to style first letter
+        first-line => to style first line
+        group => to grouping
+        group-hover => when hovering parent, child element style can be changed, (should add class group at parent element)
+        selection: => to style if user select text
+      -->
+      <div class="shadow-md p-5 bg-white mt-4 rounded-xl border border-slate-200 group hover:bg-sky-500">
+        <h1 class="text-2xl font-serif font-semibold mb-3 text-slate-700 group-hover:text-white">My Card</h1>
+        <p class="text-lg text-slate-700 first-letter:text-5xl first-letter:float-left first-letter:mr-3 first-line:uppercase selection:bg-red-400 selection:text-white group-hover:text-white">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda voluptas explicabo iusto perferendis, voluptate quisquam ex, laudantium quaerat quidem repellat culpa provident enim itaque eveniet minus veniam placeat fugit at.
+        </p>
+      </div>
+
+      <!--  
+        peer => untuk bisa mengakses sibiling
+      -->
+      <div class="shadow-md p-5 bg-white mt-4 rounded-xl border border-slate-200">
+        <label for="email" class="block mb-3">
+          <span class="text-md text-slate-600 after:content-['*'] after:ml-1 after:text-red-600">Email</span>
+        </label>
+        <input 
+          type="email" 
+          id="email" 
+          placeholder="Enter your email here..."
+          class="border shadow-md px-3 py-3 text-md rounded-lg w-full outline-none text-slate-600 placeholder:text-slate-300 invalid:border-red-400 border-1 invalid:text-red-600 peer"
+        >
+        <span class="text-sm m-2 text-red-600 inline-block invisible peer-invalid:visible">Invalid Email</span>
+      </div>
+
+      <!-- 
+        Dark mode tailwind akan auto matching dengan dark mode system operasi kita.
+        dark: => style dark mode
+      -->
+      <p class="mt-7 dark:bg-red-600 bg-sky-500">Belajar Dark Mode</p>
+      <input type="checkbox" name="test" id="toggle">
+      <label for="toggle">Dark</label>
+    </div>
+
+    <script>
+      const toggle = document.getElementById('toggle');
+      const html = document.querySelector('html');
+      
+      toggle.addEventListener('click', () => {
+        if(toggle.checked) {
+          window.alert('Dark')
+          html.classList.add('dark');
+        } else {
+          html.classList.remove('dark');
+        }
+      })
+    </script>
+  </body>
+</html>
