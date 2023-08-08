@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Learning Tailwind</title>
+  </head>
+  <body>
+    <div class="mx-auto w-[769px] py-12">
+      <h1 class="text-4xl mt-12">Transform, Transition & Animation</h1>
+
+      <h3 class="mt-12 mb-7 text-2xl">Rotate (Transform)</h3>
+      <!-- 
+        To setting rotate, we can use rotate-degree.
+        example. rotate 45 deg, we can type clsss rotate-45
+      -->
+      <div class="w-32 h-32 bg-red-400 rounded-lg hover:rotate-45 mb-7"></div>
+
+      <h3 class="mt-12 mb-7 text-2xl">Scale (Transform)</h3>
+      <!--  
+        to setting scale, we can type scale-size, example scale-125.
+        or to scale horizontal we can type scale-x-125.
+      -->
+      <div class="w-32 h-32 bg-red-400 rounded-lg hover:scale-x-125"></div>
+
+      <h3 class="mt-12 mb-7 text-2xl">Transition</h3>
+      <!--  
+        transition-transform => transition-property: transform;
+        ease-in-out => transition-timing-function: ease-in-out;
+        delay-1000 => transition-delay: 1s;
+        duration-1000 => transition-duration: 1s;
+      -->
+      <div class="w-32 h-32 bg-red-400 rounded-lg hover:scale-x-125 transition-transform ease-in-out duration-1000 delay-1000"></div>
+
+      <h3 class="mt-12 mb-7 text-2xl">Animation (Rotate Animation like React Rotate)</h3>
+      <!--  
+        animasi berputar
+      -->
+      <div class="w-32 h-32 bg-red-400 rounded-lg animate-spin"></div>
+
+      <h3 class="mt-12 mb-7 text-2xl">Animation (Fade in fade out)</h3>
+      <!--  
+        animasi fade in fade out
+      -->
+      <div class="w-32 h-32 bg-red-400 rounded-lg animate-ping"></div>
+
+      <h3 class="mt-12 mb-7 text-2xl">Animation (bedenyut)</h3>
+      <!--  
+        animasi bedenyut
+      -->
+      <div class="w-32 h-32 bg-red-400 rounded-lg animate-pulse"></div>
+
+      <h3 class="mt-12 mb-7 text-2xl">Animation (bouce)</h3>
+      <!--  
+        animasi buonce
+      -->
+      <div class="w-32 h-32 bg-red-400 rounded-lg animate-bounce"></div>
+
+      <h3 class="mt-12 mb-7 text-2xl">Animation Custome</h3>
+      <!--  
+        animasi custome (setting di tailwind.config.js)
+      -->
+      <div class="w-32 h-32 bg-red-400 rounded-lg animate-animasiReactBerputarYangLambat"></div>
+
+      <h3 class="mt-12 mb-7 text-2xl">Animation Custome 2</h3>
+      <!--  
+        animasi custome (setting di tailwind.config.js)
+      -->
+      <div class="w-32 h-32 bg-red-400 rounded-lg animate-animasiKu"></div>
+    </div>
+  </body>
+</html>
