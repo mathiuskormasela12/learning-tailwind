@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  This one to custom css reset
+*/
+@layer base {
+  h1 {
+    /* To apply tailwind classes */
+    @apply text-4xl;
+  }
+}
+
+/*
+  This one to add a class to components and apply with class utilities
+*/
+@layer components {
+  .my-container {
+    @apply container mx-auto;
+  }
+}
+
+@layer utilities {
+  .text-danger {
+    /* To access colors danger. We cab access another themes as well from Tailwind Config */
+    color: theme(colors.danger);
+  }
+}
+
+/* To Apply media screen based on Tailwind Break Point */
+@media screen(sm) {
+  .text-danger {
+    @apply text-sky-700;
+  }
+}
