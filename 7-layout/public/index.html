@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Learning Tailwind</title>
+  </head>
+  <body>
+    <!--
+      Container class.
+      It will be responsive as well.
+      if you're in mobile, the width is 100%
+    -->
+    <div class="container mx-auto">
+      <h1 class="text-4xl my-8">Learning Layout</h1>
+      <!-- 
+        float-left => float: left;
+        float-right => float: right;
+
+        relative => position: relative;
+        absolute => position: absolute;
+        right-0 => right: 0;
+        -top-3.5 => top: -14px;
+      -->
+      <div class="bg-white, w-full border shadow-md rounded-xl p-7 relative">
+        <div class="w-10 h-10 bg-sky-700 rounded-full flex cursor-pointer absolute right-0 -top-3.5">
+          <span class="text-red-400 text-2xl m-auto">
+            X
+          </span>
+        </div>
+        <img 
+          src="https://source.unsplash.com/1000x600?japan" 
+          width="300" 
+          height="300" 
+          alt="Image"
+          class="rounded-xl float-left mr-5"
+        >
+        <p class="text-justify text text-slate-700">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero itaque unde dolore consectetur blanditiis commodi voluptate, porro quisquam aliquam. Blanditiis pariatur tempore dolorum, itaque quia vitae saepe quibusdam veniam distinctio repudiandae voluptatem ullam soluta est natus quae sit exercitationem! Laboriosam obcaecati id quisquam illum nesciunt cupiditate cumque laudantium dolore, corrupti architecto ipsum unde eum adipisci consequuntur reiciendis minima qui modi amet delectus ullam maiores, molestias libero? Vitae dolore deserunt rerum nam voluptatum placeat, commodi officia? Doloribus atque, deserunt velit eum quidem numquam optio voluptate aut nam ratione nobis debitis vitae totam soluta repellendus fugit laboriosam, omnis magnam natus! Quia, dignissimos?
+        </p>
+        <p>Clean Code</p>
+      </div>
+
+      <!-- Create 4 coloumn -->
+      <!-- columns-number -->
+      <div class="bg-white shadow-xl border my-12 columns-4">
+        <img 
+          src="https://source.unsplash.com/1000x600?japan" 
+          alt="Image"
+          class="rounded-xl mb-4"
+        >
+        <img 
+          src="https://source.unsplash.com/1000x600?japan" 
+          alt="Image"
+          class="rounded-xl mb-4"
+        >
+        <img 
+          src="https://source.unsplash.com/1000x600?japan" 
+          alt="Image"
+          class="rounded-xl mb-4"
+        >
+        <img 
+          src="https://source.unsplash.com/1000x600?japan" 
+          alt="Image"
+          class="rounded-xl mb-4"
+        >
+        <img 
+          src="https://source.unsplash.com/1000x600?japan" 
+          alt="Image"
+          class="rounded-xl mb-4"
+        >
+        <img 
+          src="https://source.unsplash.com/1000x600?japan" 
+          alt="Image"
+          class="rounded-xl mb-4"
+        >
+        <img 
+          src="https://source.unsplash.com/1000x600?japan" 
+          alt="Image"
+          class="rounded-xl mb-4"
+        >
+        <img 
+          src="https://source.unsplash.com/1000x600?japan" 
+          alt="Image"
+          class="rounded-xl mb-4"
+        >
+        <img 
+          src="https://source.unsplash.com/1000x600?japan" 
+          alt="Image"
+          class="rounded-xl mb-4"
+        >
+      </div>
+    </div>
+  </body>
+</html>
